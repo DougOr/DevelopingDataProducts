@@ -1,0 +1,58 @@
+---
+title       : Developing Data Products
+subtitle    : Coursera Project - Slidify
+author      : Doug Ortiz
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Analyzing the out of the box Titanic Dataset
+
+The out of the box Titanic Dataset was used for this shiny app for analysis.
+
+The interface was created with 4 different tabs
+
+1. Documentation
+2. Selected Values
+3. Grid
+4. Plot
+
+--- .class #id 
+
+## Filtering
+
+1. Determine if filtering the dataset is desired by clicking on the Filter Data? Checkbox
+2. Select additional values to filter upon: Class, Sex and Age
+3. Click the Submit Button
+
+--- .class #id 
+
+## Selected Values
+The values selected are displayed in the form of:
+
+1. Class
+2. Sex
+3. Age
+
+--- .class #id 
+
+## Grid
+The grid can be used for sorting, paging and filtering the data asides from the filter options in the left hand navigation panel.
+
+1. Choose how many entries you want to view - Top Left of the Grid
+2. Sort any of the columns by clicking on the up/down icons to the right of each column name
+3. Enter the value to search and filter for - Top right of the Grid
+4. Filter a single or multiple columns at the same time - Bottom of the Grid
+5. Page the data in the Grid - Bottom right of the Grid
+
+--- .class #id 
+
+## Plot
+A MosaicPlot has been utilized to display the data that has been filtered.
+
+1. Click the Plot Tab
