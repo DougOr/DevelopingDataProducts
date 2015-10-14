@@ -1,14 +1,18 @@
 ---
-title       : Developing Data Products
-subtitle    : Coursera Project - Slidify
-author      : Doug Ortiz
-job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+title: "Developing Data Products"
+author: "Doug Ortiz"
+highlighter: highlight.js
+output: pdf_document
+job: null
+knit: slidify::knit2slides
+mode: standalone
+hitheme: tomorrow
+subtitle: Coursera Project - Slidify
+framework: io2012
+widgets: []
+#github: 
+#  user: DougOr
+#  repo: DevelopingDataProducts
 ---
 
 ## Analyzing the out of the box Titanic Dataset
@@ -55,4 +59,10 @@ The grid can be used for sorting, paging and filtering the data asides from the 
 ## Plot
 A MosaicPlot has been utilized to display the data that has been filtered.
 
+This slide contains the R code requested by the project requirements.
+
 1. Click the Plot Tab
+
+```{r}
+summary(cars)
+```
