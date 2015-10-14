@@ -3,28 +3,29 @@ install.packages("devtools")
 library(devtools)
 
 # Install Slidify
-install_github('slidify', 'ramnathv')
-install_github('slidifyLibraries','ramnathv')
+install_github('ramnathv/slidify')
+install_github('ramnathv/slidifyLibraries')
 
 # Load Slidify
 library(slidify)
 
 # Set the Working Directory
 setwd("~/ddp-slidify/")
+getwd()
 
 # Create the Slidify Deck
 author("first_deck")
 
 # Create the Slidify Rmd
-slidify("index.Rmd")
+#slidify("index.Rmd")
+#slidify('index.Rmd', options = list(copy_libraries = TRUE, theme = "io2012"))
+slidify("index.Rmd", options=list(framework="io2012", copy_libraries=TRUE))
 
 # Browse to the HTML
 browseURL("index.html")
 
-# Publish to GitHub
-#publish_github(repo, username='github.DougOr')
-#publish_github(username='github.DougOr', repo="DevelopingDataProducts2")
-publish_github(user="DougOr",repo="DevelopingDataProducts")
-
 #Publish to RPubs
-#publish(title = 'Analyzing Titanic Dataset', 'index.html', host = 'rpubs')
+# Set the Working Directory
+setwd("~/ddp-slidify/first_deck/")
+getwd()
+publish(title = 'Analyzing Titanic Dataset', 'index.html', host = 'rpubs')
